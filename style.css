@@ -1,0 +1,13 @@
+p,
+h1 { 
+    color: red;
+    
+}
+
+h1:nth-child(1) {
+font-size: medium;
+}
+
+.redText {
+    color: turquoise
+}
