@@ -1,0 +1,63 @@
+/* Set box-sizing property for all elements to border-box */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Define grid container */
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* header, main content, and footer */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for nav links */
+    grid-gap: 20px; /* add some space between grid items */
+    height: 100vh; /* set height of grid container to viewport height */
+  }
+  
+  /* Style header */
+  header {
+    grid-row: 1;
+    grid-column: 1 / -1; /* span across all columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  header button {
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Style main content */
+  main {
+    grid-row: 2;
+    grid-column: 1 / -1; /* span across all columns */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  main header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+  
+  /* Style footer */
+  footer {
+    grid-row: 3;
+    grid-column: 1 / -1;  
+  }
