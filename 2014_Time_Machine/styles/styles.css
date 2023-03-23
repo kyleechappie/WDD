@@ -24,7 +24,7 @@ body {
     height: 40px; /* Updated size of the image */
     margin: 0 auto; /* Center the image */
      display: block; /* Set the image as a block element to center it */
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
   
   header button {
